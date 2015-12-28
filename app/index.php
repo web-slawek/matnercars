@@ -39,13 +39,12 @@ if(!isset($_SESSION['username']))
             <div class="contents">
                 <aside>
                     <nav>
-                        <a class="btn-danger active" href="index.php">Home Page</a>
-                        <a class="btn-danger" href="?page=MainSettings">Main Settings</a>
-                        <a class="btn-danger" href="?page=Sections">Sections</a>
-                        <a class="btn-danger" href="?page=Pages">Pages</a>
-                        <a class="btn-danger" href="?page=Comments">Comments</a>
-                        <a class="btn-danger" href="?page=Library">Library</a>
-                        <a class="btn-danger" href="?page=Banners">Banners</a>
+                        <a class="btn-danger active" href="index.php">Strona główna</a>
+                        <a class="btn-danger" href="?page=MainSettings">Ustawienia</a>
+                        <a class="btn-danger" href="?page=Sections">Sekcje</a>
+                        <a class="btn-danger" href="?page=Pages">Strony</a>
+                        <a class="btn-danger" href="?page=Library">Galeria</a>
+                        <a class="btn-danger" href="?page=Banners">Bannery</a>
                     </nav>
                 </aside>
                 <section id="page">
@@ -65,7 +64,7 @@ if(!isset($_SESSION['username']))
             </div>
             <div class="clear"></div>
             <footer>
-                <p>Copyright reserved - Ali Hamdi</p>
+                <p>Wszystkie prawa zastrzeżone - Matnercars 2015</p>
             </footer>
         </div>
     </body>

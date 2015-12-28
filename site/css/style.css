@@ -120,34 +120,24 @@ p{
 }
 /* slider thumnails */
 
-.bx-wrapper .bx-pager{
+#bx-pager{
     max-width: 1170px;
     width: 100%;
     margin: 0 auto;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    text-align: center;
+    margin-top: -30px;
+    position: relative;
+    z-index: 200;
 }
-.bx-pager-item{
-    width: 33%;
+#bx-pager a{
+    width: 32%;
     margin-bottom: 2px;
     margin-right: 2px;
-}
-.bx-pager-item a{
-    background: #ededed;
-    display: block;
-}
-.bx-pager-item a.active{
-    background: #e54239;
-    color: #fff;
-}
-.bx-pager-item p{
-    font-size: 24px;
-    margin-bottom: 0px;
-    padding: 8px 0;
-}
-.bx-pager-item p span{
-    font-weight: normal;
+    display: inline-block;
+    background: #e54239 url("../img/beige-paper.png") repeat;
+    padding: 10px 0px;
+    font-size: 20px;
+    color: #ffffff;
 }
 /* slider thumnails koniec */
 
@@ -208,7 +198,7 @@ header h1 {
     background-color: #d9534f;
     background-repeat: no-repeat;
     background-size: 32px 64px;
-    background-image: url("../../content/img/cd-icon-controller.svg");
+    background-image: url("../../site/img/cd-icon-controller.svg");
 }
 .no-touch #cd-zoom-in:hover, .no-touch #cd-zoom-out:hover {
     background-color: #d36868;
@@ -356,7 +346,7 @@ section.module.parallax p {
 .firma {
     position: relative;
     background: #f3f3f3 url("../img/overlay.png") repeat;
-    min-height: 600px;
+    padding-bottom: 30px;
 }
 
 .firma .title {

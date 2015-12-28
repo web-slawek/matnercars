@@ -10,9 +10,16 @@ $BannerDataDisplay = $displaybanner->getAllDataByStatusType($type);
 echo '<ul class="bxslider">';
 for($i =0; $i < count($BannerDataDisplay); $i++)
 {
-    echo '<li><h1>'.$BannerDataDisplay[$i]['bannerDesc'].'</h1><img src="app/'.$BannerDataDisplay[$i]['bannerUrl'].'" /></li>';
+    echo '<li><img src="app/'.$BannerDataDisplay[$i]['bannerUrl'].'" /></li>';
 }
 echo '</ul>';
+
+echo '<div id="bx-pager">';
+for($i =0; $i < count($BannerDataDisplay); $i++)
+{
+    echo '<a data-slide-index='. $i .'>'.$BannerDataDisplay[$i]['bannerDesc'].'</a>';
+}
+echo '</div>';
 
 ?>
 

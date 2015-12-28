@@ -6,7 +6,7 @@ and open the template in the editor.
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>awebarts</title>
+        <title>Matnercars</title>
 
         <link rel="stylesheet" href="resources/css/bootstrap.min.css" type="text/css">
         <link rel="stylesheet" href="resources/css/bootstrap.css" type="text/css">

@@ -2,10 +2,9 @@ $(document).ready(function () {
     $('.bxslider').bxSlider({
         mode: 'fade',
         captions: true,
-        pager: false,
-        auto: true
+        auto: true,
+        pagerCustom: '#bx-pager'
     });
-
 });
 
 
@@ -31,7 +30,7 @@ jQuery(document).ready(function ($) {
 
     //google map custom marker icon - .png fallback for IE11
     var is_internetExplorer11 = navigator.userAgent.toLowerCase().indexOf('trident') > -1;
-    var marker_url = (is_internetExplorer11) ? 'content/img/cd-icon-controller.svg' : 'content/img/cd-icon-location.svg';
+    var marker_url = (is_internetExplorer11) ? 'site/img/cd-icon-controller.svg' : 'site/img/cd-icon-location.svg';
 
     //define the basic color of your map, plus a value for saturation and brightness
     var main_color = '#2d313f',
