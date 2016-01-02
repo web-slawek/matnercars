@@ -1,0 +1,4 @@
+nazwa bazy: kolasa_serwis
+host localhost
+user kolasa_serwis
+haslo slawcio1990

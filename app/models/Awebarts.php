@@ -18,6 +18,7 @@ class Awebarts {
         //require_once MODELS.'Database.php';
         $vars = "includes/vars.php";
         $this->cxn = new Database($vars);
+        
     }
     
     function close()

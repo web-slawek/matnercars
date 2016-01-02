@@ -1,7 +1,8 @@
 <?php
 session_start();
+
 if(!isset($_SESSION['username']))
-{
+{    
     include 'C_LoginController.php';
     die();
 }
@@ -12,7 +13,7 @@ if(!isset($_SESSION['username']))
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>awebarts</title>
+        <title>Matnercars</title>
 
         <link rel="stylesheet" href="resources/css/bootstrap.min.css" type="text/css">
         <link rel="stylesheet" href="resources/css/bootstrap.css" type="text/css">
@@ -26,10 +27,10 @@ if(!isset($_SESSION['username']))
         <div class="container">
             <header>
                 <img src="resources/images/logo.png" alt="logo">
-                <h2>Welcome 
+                <h2>Witaj 
 <?php if(isset($_SESSION['username']))
 {
-     echo $_SESSION['username']."   <a href='?page=logout'>Logout</a>";
+     echo $_SESSION['username']."   <a href='?page=logout'>Wyloguj</a>";
 }
 
 ?>

@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $('.bxslider').bxSlider({
-        mode: 'fade',
+        mode: 'horizontal',
         captions: true,
         auto: true,
         pagerCustom: '#bx-pager'

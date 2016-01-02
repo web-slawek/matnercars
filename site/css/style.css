@@ -103,6 +103,8 @@ p{
 }
 .bx-wrapper img{
     opacity: 1;
+    margin: 0 auto;
+    box-shadow: 0px 0px 50px #000;
 }
 .bx-wrapper h1{
     position: absolute;
@@ -134,10 +136,13 @@ p{
     margin-bottom: 2px;
     margin-right: 2px;
     display: inline-block;
-    background: #e54239 url("../img/beige-paper.png") repeat;
-    padding: 10px 0px;
-    font-size: 20px;
+    background: #d9534f;
+    padding: 5px 0px;
+    font-size: 25px;
     color: #ffffff;
+}
+.bx-wrapper .bx-viewport{
+    background: #444444 url("../img/overlay.png") repeat;
 }
 /* slider thumnails koniec */
 
@@ -284,19 +289,19 @@ section.module.parallax p {
     margin-bottom: 5px;
 }
 .mail span{
-    padding: 2px 13px;
+    padding: 3px 13px;
     background: url('../img/footer-mail.png') no-repeat 0px 0px;
 }
 .telefon span{
-    padding: 2px 13px;
+    padding: 3px 13px;
     background: url('../img/footer-phone.png') no-repeat 0px 0px;
 }
 .facebook span{
-    padding: 2px 13px;
+    padding: 3px 13px;
     background: url('../img/footer-fb.png') no-repeat 0px 0px;
 }
 .copy span{
-    padding: 2px 13px;
+    padding: 3px 13px;
     background: url('../img/footer-copy.png') no-repeat 0px 0px;
 }
 .logo-footer{

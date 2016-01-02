@@ -22,7 +22,6 @@ $OfertaDisplay = $displayoferta->getSectionByName($oferujemy);
 
 ?>
 
-
 <div class="firma">
     <div class="title">Co warto wiedziec ?</div>
     <div class="container">
@@ -54,6 +53,7 @@ $OfertaDisplay = $displayoferta->getSectionByName($oferujemy);
         </div>
     </div>
 </div>
+
 <section id="cd-google-map">
     <div id="google-container"></div>
     <div id="cd-zoom-in"></div>

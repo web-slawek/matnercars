@@ -13,6 +13,7 @@ class Display extends Awebarts {
 
     public function __construct($tablename) {
         $this->tablename = $tablename;
+        
         $this->connectToDb();
     }
 

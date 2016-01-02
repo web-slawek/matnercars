@@ -1,7 +1,7 @@
 <?php
 
 function autoloader($classname) {
-    $dirs = array('', './app/models/', MODELS, 'models/', '../app/models/', '../models/');
+    $dirs = array('', '../app/models/', MODELS, 'models/', '../app/models/', '../models/');
     $formats = array('%s.php.inc', '%s.php', '%s.class.php', 'class.%s.php');
 
     foreach ($dirs as $dir) {

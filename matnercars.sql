@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Czas generowania: 26 Gru 2015, 16:38
+-- Czas generowania: 28 Gru 2015, 21:35
 -- Wersja serwera: 5.6.26
 -- Wersja PHP: 5.6.12
 
@@ -35,17 +35,18 @@ CREATE TABLE IF NOT EXISTS `banners` (
   `createdBy` varchar(20) NOT NULL,
   `CreatedDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `type` varchar(50) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=53 DEFAULT CHARSET=utf8;
 
 --
 -- Zrzut danych tabeli `banners`
 --
 
 INSERT INTO `banners` (`id`, `bannerName`, `bannerDesc`, `bannerUrl`, `status`, `createdBy`, `CreatedDate`, `type`) VALUES
-(47, '2904_17-12-2015_s5.png', 'opis', 'resources/uploads/2904_17-12-2015_s5.png', 1, 'admin', '2015-12-17 11:51:33', 'slider'),
 (48, '6855_17-12-2015_diagnostyka.png', 'Diagnostyka komputerowa', 'resources/uploads/6855_17-12-2015_diagnostyka.png', 1, 'admin', '2015-12-17 12:59:34', 'uslugi'),
 (49, '9024_17-12-2015_pomoc24.png', 'Pomoc drogowa', 'resources/uploads/9024_17-12-2015_pomoc24.png', 1, 'admin', '2015-12-17 13:11:01', 'uslugi'),
-(50, '3709_17-12-2015_clima.png', 'Serwis klimatyzacji', 'resources/uploads/3709_17-12-2015_clima.png', 1, 'admin', '2015-12-17 13:23:22', 'uslugi');
+(50, '3709_17-12-2015_clima.png', 'Serwis klimatyzacji', 'resources/uploads/3709_17-12-2015_clima.png', 1, 'admin', '2015-12-17 13:23:22', 'uslugi'),
+(51, '4160_28-12-2015_cc.png', 'Serwis klimatyzacji', 'resources/uploads/4160_28-12-2015_cc.png', 1, 'test', '2015-12-28 19:25:43', 'slider'),
+(52, '3351_28-12-2015_s5.png', 'Wymiana oleju', 'resources/uploads/3351_28-12-2015_s5.png', 1, 'test', '2015-12-28 19:26:24', 'slider');
 
 -- --------------------------------------------------------
 
@@ -104,25 +105,19 @@ CREATE TABLE IF NOT EXISTS `pages` (
   `page_image` varchar(250) NOT NULL,
   `page_date` varchar(50) NOT NULL,
   `createdBy` varchar(50) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8;
 
 --
 -- Zrzut danych tabeli `pages`
 --
 
 INSERT INTO `pages` (`id`, `page_name`, `page_content`, `page_status`, `page_visits`, `sectionId`, `page_image`, `page_date`, `createdBy`) VALUES
-(5, 'test new page with an image', 'test new page with an image test new page with an image test new page with an image test new page with an image test new page with an image test new page with an image test new page with an image test new page with an image test new page with an image test new page with an image test new page with an image test new page with an image test new page with an image test new page with an image test new page with an image test new page with an image test new page with an image test new page with an image test new page with an image test new page with an image test new page with an image test new page with an image test new page with an image test new page with an image test new page with an image test new page with an image test new page with an image test new page with an image test new page with an image ', 'active', 0, 6, '', '05-11-13', 'ali'),
-(6, 'EMIRATES STEEL ', 'EMIRATES STEEL TARGETS NEW RANGE OF STRUCTURAL STEEL FOR OFFSHORE INSTALLATIONSEMIRATES STEEL TARGETS NEW RANGE OF STRUCTURAL STEEL FOR OFFSHORE INSTALLATIONSEMIRATES STEEL TARGETS NEW RANGE OF STRUCTURAL STEEL FOR OFFSHORE INSTALLATIONSEMIRATES STEEL TARGETS NEW RANGE OF STRUCTURAL STEEL FOR OFFSHORE INSTALLATIONSEMIRATES STEEL TARGETS NEW RANGE OF STRUCTURAL STEEL FOR OFFSHORE INSTALLATIONSEMIRATES STEEL TARGETS NEW RANGE OF STRUCTURAL STEEL FOR OFFSHORE INSTALLATIONSEMIRATES STEEL TARGETS NEW RANGE OF STRUCTURAL STEEL FOR OFFSHORE INSTALLATIONSEMIRATES STEEL TARGETS NEW RANGE OF STRUCTURAL STEEL FOR OFFSHORE INSTALLATIONS', 'active', 0, 6, 'images/logo.png', '06-11-13', 'ali'),
-(7, 'test new page withOut an image', 'test new page withOut an imagetest new page withOut an imagetest new page withOut an imagetest new page withOut an imagetest new page withOut an imagetest new page withOut an imagetest new page withOut an image', 'active', 0, 3, 'images/logo.png', '06-11-13', 'ali'),
-(8, 'Web Design', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\r\n\r\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\r\n\r\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', 'active', 0, 5, 'resources/uploads/6322_22-01-2014_984_05-11-2013_a5638fa22aff0bb0c45ca03b1f1821a6.jpg', '22-01-14', 'ali'),
-(9, 'new product', 'new product new product new product', 'active', 0, 6, 'images/logo.png', '22-01-14', 'ali'),
-(10, 'Fabex Middle East 2013 0', 'FABEX Middle East 2013 is the Arabâ€™s Largest Metal Forming, Fabricating, Welding and Finishing ExhibitionFABEX Middle East 2013 is the Arabâ€™s Largest Metal Forming, Fabricating, Welding and Finishing ExhibitionFABEX Middle East 2013 is the Arabâ€™s Largest Metal Forming, Fabricating, Welding and Finishing ExhibitionFABEX Middle East 2013 is the Arabâ€™s Largest Metal Forming, Fabricating, Welding and Finishing ExhibitionFABEX Middle East 2013 is the Arabâ€™s Largest Metal Forming, Fabricating, Welding and Finishing ExhibitionFABEX Middle East 2013 is the Arabâ€™s Largest Metal Forming, Fabricating, Welding and Finishing ExhibitionFABEX Middle East 2013 is the Arabâ€™s Largest Metal Forming, Fabricating, Welding and Finishing ExhibitionFABEX Middle East 2013 is the Arabâ€™s Largest Metal Forming, Fabricating, Welding and Finishing ExhibitionFABEX Middle East 2013 is the Arabâ€™s Largest Metal Forming, Fabricating, Welding and Finishing Exhibition', 'active', 0, 5, 'resources/uploads/7406_24-01-2014_fabex.jpg', '24-01-14', 'ali'),
-(12, 'first-future.com ', ' 1	\r\nfirst-future.com\r\n\r\nFirst Future is proud of introducing the best services for itâ€™s clients. we are one from the most 1	\r\nfirst-future.com\r\n\r\nFirst Future is proud of introducing the best services for itâ€™s clients. we are one from the most 1	\r\nfirst-future.com\r\n\r\nFirst Future is proud of introducing the best services for itâ€™s clients. we are one from the most 1	\r\nfirst-future.com\r\n\r\nFirst Future is proud of introducing the best services for itâ€™s clients. we are one from the most 1	\r\nfirst-future.com\r\n\r\nFirst Future is proud of introducing the best services for itâ€™s clients. we are one from the most 1	\r\nfirst-future.com\r\n\r\nFirst Future is proud of introducing the best services for itâ€™s clients. we are one from the most', 'active', 0, 5, 'resources/uploads/3108_24-01-2014_ff.jpg', '24-01-14', 'ali'),
-(13, 'metalsteelsaudi.com ', 'Secure your stand at Metal & Steel Saudi Arabia 2013 Secure your stand at Metal & Steel Saudi Arabia 2013 Secure your stand at Metal & Steel Saudi Arabia 2013 Secure your stand at Metal & Steel Saudi Arabia 2013 Secure your stand at Metal & Steel Saudi Arabia 2013 Secure your stand at Metal & Steel Saudi Arabia 2013 Secure your stand at Metal & Steel Saudi Arabia 2013 Secure your stand at Metal & Steel Saudi Arabia 2013 Secure your stand at Metal & Steel Saudi Arabia 2013 Secure your stand at Metal & Steel Saudi Arabia 2013 Secure your stand at Metal & Steel Saudi Arabia 2013 ', 'active', 0, 5, 'resources/uploads/6401_24-01-2014_ksa.jpg', '24-01-14', 'ali'),
-(14, 'arabiangerman.com ', 'AGEX was established in 2004 as exhibitions and conferences organizer in the Middle East. AGEX was established in 2004 as exhibitions and conferences organizer in the Middle East. AGEX was established in 2004 as exhibitions and conferences organizer in the Middle East. AGEX was established in 2004 as exhibitions and conferences organizer in the Middle East. AGEX was established in 2004 as exhibitions and conferences organizer in the Middle East. AGEX was established in 2004 as exhibitions and conferences organizer in the Middle East. AGEX was established in 2004 as exhibitions and conferences organizer in the Middle East. AGEX was established in 2004 as exhibitions and conferences organizer in the Middle East. AGEX was established in 2004 as exhibitions and conferences organizer in the Middle East. AGEX was established in 2004 as exhibitions and conferences organizer in the Middle East. AGEX was established in 2004 as exhibitions and conferences organizer in the Middle East. AGEX was established in 2004 as exhibitions and conferences organizer in the Middle East. AGEX was established in 2004 as exhibitions and conferences organizer in the Middle East. AGEX was established in 2004 as exhibitions and conferences organizer in the Middle East. AGEX was established in 2004 as exhibitions and conferences organizer in the Middle East. AGEX was established in 2004 as exhibitions and conferences organizer in the Middle East. AGEX was established in 2004 as exhibitions and conferences organizer in the Middle East. ', 'active', 0, 5, 'resources/uploads/1693_24-01-2014_agex.png', '24-01-14', 'ali'),
 (15, 'O firmie', 'Firma zaistniaÅ‚a 02.01.2012r. a jej zaÅ‚oÅ¼yciele od pokoleÅ„ zajmujÄ… siÄ™ tym czym potrafiÄ… najlepiej czyli mechanikÄ… pojazdowÄ…. MATNER CARS dostarcza swoim klientom kompleksowe usÅ‚ugi z zakresu mechaniki, elektromechaniki i diagnostyki komputerowej, pojazdÃ³w osobowych i dostawczych. Firma poprzez dynamiczny rozwÃ³j zyskuje nowych klientÃ³w i wchodzi na nowe rynki usÅ‚ug. W ostatnim czasie jej dziaÅ‚alnoÅ›Ä‡ poszerzyÅ‚a siÄ™ o bogatÄ… ofertÄ™ z zakresu serwisu ukÅ‚adu klimatyzacji w samochodach osobowych, ciÄ™Å¼arowych i autobusach. Codzienne starania i stawianie przed sobÄ… wysokich celÃ³w jakimi sÄ… dokÅ‚adnoÅ›Ä‡, profesjonalizm i fachowoÅ›Ä‡ poÅ›rÃ³d Å›wiadczonych usÅ‚ug ma prowadziÄ‡ do uzyskania zadowolenia klienta.', 'active', 0, 8, 'resources/images/logo.png', '17-12-15', 'admin'),
 (16, 'Silnik i skrzynia biegÃ³w', 'W obecnych samochodach wystÄ™pujÄ… dwa rodzaje skrzyni biegÃ³w - rÄ™czna i automatyczna. W obsÅ‚udze rÄ™cznej skrzyni biegÃ³w niezbÄ™dne sÄ… nastÄ™pujÄ…ce elementy: sprzÄ™gÅ‚o, hydraulika sprzÄ™gÅ‚aoraz dÅºwignia zmiany biegÃ³w. SprzÄ™gÅ‚o odpowiedzialne jest za przeniesienie mocy z silnika do skrzyni biegÃ³w. Dokonuje siÄ™ tego za pomocÄ… tarczy sprzÄ™gÅ‚a, ktÃ³rej powierzchnia wykonana jest z materiaÅ‚u uÅ¼ywanego rÃ³wnieÅ¼ w okÅ‚adzinie szczÄ™k hamulcowych. W miarÄ™ upÅ‚ywu czasu powierzchnia tarczy sprzÄ™gÅ‚a zuÅ¼ywa siÄ™ - dlatego tarczÄ™ naleÅ¼y regularnie wymieniaÄ‡.\r\n\r\nZuÅ¼ycie sprzÄ™gÅ‚a zaleÅ¼y od wielu czynnikÃ³w. ZuÅ¼yte sprzÄ™gÅ‚o moÅ¼emy rozpoznaÄ‡, kiedy:\r\n\r\n    - wystÄ™pujÄ… trudnoÅ›ci ze zmianÄ… biegÃ³w lub wrzuceniem na tzw. â€žluzâ€\r\n    - wzrastajÄ… obroty silnika, ale prÄ™dkoÅ›Ä‡ siÄ™ nie zmienia\r\n    - trudno jest wjechaÄ‡ na wzniesienie\r\n    - w Å›rodku samochodu czuÄ‡ swÄ…d spalenizny\r\n\r\nMechanicy MATNER CARS bez trudu oceniÄ… zuÅ¼ycie sprzÄ™gÅ‚a. JeÅ›li bÄ™dzie ono wymagaÄ‡ wymiany, wykonamy jÄ… bez trudu w dogodnym dla Ciebie terminie, uÅ¼ywajÄ…c tylko czÄ™Å›ci wysokiej jakoÅ›ci.\r\n\r\nPrzy obsÅ‚udze automatycznej skrzyni biegÃ³w naleÅ¼y pamiÄ™taÄ‡ o regularnej wymianie oleju i filtra w niektÃ³rych typach przekÅ‚adni automatycznych.', 'active', 0, 9, 'images/logo.png', '17-12-15', 'admin'),
-(17, 'Wymiana oleju', 'Wymiana oleju to podstawowa czynnoÅ›Ä‡ serwisowa, pozwalajÄ…ca na zachowanie osiÄ…gÃ³w silnika i zwiÄ™kszenie jego Å¼ywotnoÅ›ci.\r\n\r\nW trakcie jazdy samochodem olej ulega zanieczyszczeniu, przez co traci swoje parametry i nie gwarantuje wÅ‚aÅ›ciwego smarowania silnika. Dlatego naleÅ¼y go regularnie wymieniaÄ‡.\r\n\r\nOkresowoÅ›Ä‡ wymiany oleju ustala producent pojazdu, w zaleÅ¼noÅ›ci od wÅ‚aÅ›ciwoÅ›ci oleju i charakterystyki silnika. Informacje te znajdziemy w ksiÄ…Å¼ce serwisowej pojazdu. WiÄ™kszoÅ›Ä‡ produkowanych aktualnie aut wymaga wymiany oleju po przejechaniu 15 000 - 30 000 km lub po roku czasu. Jest to takÅ¼e uzaleÅ¼nione od pewnych czynnikÃ³w, takich jak zuÅ¼ycie oleju przez silnik i warunkÃ³w jazdy. W czasie jazdy po mieÅ›cie (maÅ‚e odlegÅ‚oÅ›ci, jazda z czÄ™stym ruszaniem i zatrzymywaniem auta) i na wysokich obrotach, silnik pracuje w trudnych warunkach. Dlatego teÅ¼ przy jeÅºdzie tego typu zaleca siÄ™ wymianÄ™ oleju nawet co 8 000 - 10 000 km.\r\n\r\nWobec tempa wspÃ³Å‚czesnego Å¼ycia szybka wymiana oleju jest dobrym rozwiÄ…zaniem dla zarÃ³wno zapracowanego kierowcy jak i zapracowanego silnika. Nasi Doradcy pomogÄ… Ci dobraÄ‡ najlepszy olej dla Twojego samochodu. MoÅ¼esz go kupiÄ‡ w naszym serwisie lub dostarczyÄ‡ wÅ‚asny.\r\n\r\nPonadto w ramach bezpÅ‚atnej kontroli przed kaÅ¼dÄ… naprawÄ… nasi mechanicy sprawdzajÄ… poziom oleju w Twoim aucie. JeÅ¼eli jest on za niski, ale nie wymaga jeszcze wymiany, zaproponujÄ… Ci uzupeÅ‚nienie. W kaÅ¼dej chwili moÅ¼esz sprawdziÄ‡ datÄ™ na zawieszce zostawionej w komorze silnika w Twoim samochodzie. Jednym sÅ‚owem, zrobimy wszystko, aby TwÃ³j silnik pracowaÅ‚ pÅ‚ynnie i bez zarzutu.', 'active', 0, 9, 'images/logo.png', '17-12-15', 'admin');
+(17, 'Wymiana oleju', 'Wymiana oleju to podstawowa czynnoÅ›Ä‡ serwisowa, pozwalajÄ…ca na zachowanie osiÄ…gÃ³w silnika i zwiÄ™kszenie jego Å¼ywotnoÅ›ci.\r\n\r\nW trakcie jazdy samochodem olej ulega zanieczyszczeniu, przez co traci swoje parametry i nie gwarantuje wÅ‚aÅ›ciwego smarowania silnika. Dlatego naleÅ¼y go regularnie wymieniaÄ‡.\r\n\r\nOkresowoÅ›Ä‡ wymiany oleju ustala producent pojazdu, w zaleÅ¼noÅ›ci od wÅ‚aÅ›ciwoÅ›ci oleju i charakterystyki silnika. Informacje te znajdziemy w ksiÄ…Å¼ce serwisowej pojazdu. WiÄ™kszoÅ›Ä‡ produkowanych aktualnie aut wymaga wymiany oleju po przejechaniu 15 000 - 30 000 km lub po roku czasu. Jest to takÅ¼e uzaleÅ¼nione od pewnych czynnikÃ³w, takich jak zuÅ¼ycie oleju przez silnik i warunkÃ³w jazdy. W czasie jazdy po mieÅ›cie (maÅ‚e odlegÅ‚oÅ›ci, jazda z czÄ™stym ruszaniem i zatrzymywaniem auta) i na wysokich obrotach, silnik pracuje w trudnych warunkach. Dlatego teÅ¼ przy jeÅºdzie tego typu zaleca siÄ™ wymianÄ™ oleju nawet co 8 000 - 10 000 km.\r\n\r\nWobec tempa wspÃ³Å‚czesnego Å¼ycia szybka wymiana oleju jest dobrym rozwiÄ…zaniem dla zarÃ³wno zapracowanego kierowcy jak i zapracowanego silnika. Nasi Doradcy pomogÄ… Ci dobraÄ‡ najlepszy olej dla Twojego samochodu. MoÅ¼esz go kupiÄ‡ w naszym serwisie lub dostarczyÄ‡ wÅ‚asny.\r\n\r\nPonadto w ramach bezpÅ‚atnej kontroli przed kaÅ¼dÄ… naprawÄ… nasi mechanicy sprawdzajÄ… poziom oleju w Twoim aucie. JeÅ¼eli jest on za niski, ale nie wymaga jeszcze wymiany, zaproponujÄ… Ci uzupeÅ‚nienie. W kaÅ¼dej chwili moÅ¼esz sprawdziÄ‡ datÄ™ na zawieszce zostawionej w komorze silnika w Twoim samochodzie. Jednym sÅ‚owem, zrobimy wszystko, aby TwÃ³j silnik pracowaÅ‚ pÅ‚ynnie i bez zarzutu.', 'active', 0, 9, 'images/logo.png', '17-12-15', 'admin'),
+(18, 'Remonty silnikÃ³w', '<p>Podejmujemy siÄ™ remont&oacute;w generalnych nawet najbardziej skomplikowanych i zaawansowanych technicznie silnik&oacute;w zar&oacute;wno benzynowych jaki diesli. Dajemy nowe Å¼ycie najbardzie wyekspoatowanym jednostkom napÄ™dowym, co pozwoli ich wÅ‚aÅ›cicielom cieszyÄ‡ siÄ™ bezawaryjnÄ… pracÄ… swojego pojazdu.</p>', 'active', 0, 10, 'resources/uploads/3642_28-12-2015_naprawy.png', '28-12-15', 'test'),
+(19, 'Naprawy bieÅ¼Ä…ce', '<p>W przypadku zauwaÅ¼enia jakiejkolwiek usterki w samochodzie zalecamy moÅ¼liwie szybkie usuniÄ™cie ich u wykwalifikowanych mechanik&oacute;w. Taki nawyk wpÅ‚ywa pozytywnie nie tylko na Å¼ywotnoÅ›Ä‡ auta, ale r&oacute;wnieÅ¼ na niÅ¼sze spalanie paliwa co bezpoÅ›rednio wpÅ‚ywa na oszczÄ™dnoÅ›ci oraz bezpieczeÅ„stwo jazdy.</p>', 'active', 0, 10, 'resources/uploads/9681_28-12-2015_klucze.png', '28-12-15', 'test'),
+(20, 'Wymiany eksploatacyjne', '<p>Wykonujemy kompleksowe przeglÄ…dy z wymianÄ… element&oacute;w eksploatacyjnych takich jak: oleje, filtry powietrza, oleju, paliwa, przeciwpyÅ‚kowy, wymiany Å›wiec zapÅ‚onowych, pÅ‚yn&oacute;w chÅ‚odniczych i hamulcowych. Wykonywanie przeglÄ…d&oacute;w okresowych zapewnia trwaÅ‚oÅ›Ä‡ oraz bezawaryjnÄ… eksploatacjÄ™.</p>', 'active', 0, 10, 'resources/uploads/7164_28-12-2015_olej.png', '28-12-15', 'test');
 
 -- --------------------------------------------------------
 
@@ -138,19 +133,17 @@ CREATE TABLE IF NOT EXISTS `sections` (
   `sectionDesc` varchar(250) NOT NULL,
   `sectionDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `username` varchar(50) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 
 --
 -- Zrzut danych tabeli `sections`
 --
 
 INSERT INTO `sections` (`id`, `sectionName`, `sectionStaus`, `sectionLocation`, `sectionDesc`, `sectionDate`, `username`) VALUES
-(3, 'Our Services', 'active', 'Side', 'projects section projects section projects section projects section Newprojects section New', '2014-01-22 22:17:17', 'ali'),
-(5, 'Our Projects', 'disActive', 'Side', 'services section services section services section', '2014-01-22 22:17:44', 'ali'),
-(6, 'Products', 'active', 'Side', 'Products', '2014-01-22 22:18:04', 'ali'),
 (7, 'usÅ‚ugi', 'active', 'Side', 'wyrÃ³Å¼nione usÅ‚ugi', '2015-12-17 12:57:42', 'admin'),
 (8, 'o-firmie', 'active', 'Body', '', '2015-12-17 13:36:03', 'admin'),
-(9, 'oferujemy', 'active', 'Body', '', '2015-12-17 19:07:22', 'admin');
+(9, 'oferujemy', 'active', 'Body', '', '2015-12-17 19:07:22', 'admin'),
+(10, 'mechanika-pojazdowa', 'active', 'Body', 'oferta mechanika pojazdowa', '2015-12-28 19:52:21', 'test');
 
 -- --------------------------------------------------------
 
@@ -220,7 +213,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT dla tabeli `banners`
 --
 ALTER TABLE `banners`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=51;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=53;
 --
 -- AUTO_INCREMENT dla tabeli `main_settings`
 --
@@ -230,12 +223,12 @@ ALTER TABLE `main_settings`
 -- AUTO_INCREMENT dla tabeli `pages`
 --
 ALTER TABLE `pages`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=21;
 --
 -- AUTO_INCREMENT dla tabeli `sections`
 --
 ALTER TABLE `sections`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
 --
 -- AUTO_INCREMENT dla tabeli `users`
 --

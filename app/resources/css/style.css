@@ -1,6 +1,6 @@
 html{background: #333}
 header{padding: 20px;}
-header img{width: 20%; float: left}
+header img{width: 35%; float: left}
 header h2{float: right; font-family: cursive; font-size: 18px; margin-top: 50px;}
 
 .contents{border-radius: 10px; border: 1px solid #ddd; padding: 20px; min-height: 350px;overflow: hidden;}
@@ -27,7 +27,7 @@ footer p{font-family: verdana; font-size: 16px;}
 
 .mainSettingsForm{width:700px; float: left}
 .mainSettingsForm label{float: left; width: 150px;}
-.mainSettingsForm input{width: 250px; height: 30px; padding: 3px 5px; border:1px solid #999; border-radius: 5px; display: block; margin-bottom: 10px;}
+.mainSettingsForm input{width: 250px; height: 30px; padding: 0px 5px; border:1px solid #999; border-radius: 5px; display: block; margin-bottom: 10px;}
 .mainSettingsForm textArea{width: 250px; border-radius: 5px; border: 1px solid #999; margin-bottom: 10px; height: 90px;}
 .mainSettingsForm input[type="submit"]{height: 40px; text-align: center; margin: 50px 150px}
 

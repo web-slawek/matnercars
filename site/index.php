@@ -1,9 +1,13 @@
 <?php
+
+
+
 // display exist banners    
 $tablename = "banners";
 $type = 'slider';
 
 $displaybanner = new Display($tablename);
+
 $BannerDataDisplay = $displaybanner->getAllDataByStatusType($type);
 //`id`, `bannerName`, `bannerDesc`, `bannerUrl`, `status`, `createdBy`, `CreatedDate`
 
