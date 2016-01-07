@@ -27,10 +27,10 @@ if(!isset($_SESSION['username']))
         <div class="container">
             <header>
                 <img src="resources/images/logo.png" alt="logo">
-                <h2>Witaj 
+                <h2>Welcome 
 <?php if(isset($_SESSION['username']))
 {
-     echo $_SESSION['username']."   <a href='?page=logout'>Wyloguj</a>";
+     echo $_SESSION['username']."   <a href='?page=logout'>Logout</a>";
 }
 
 ?>

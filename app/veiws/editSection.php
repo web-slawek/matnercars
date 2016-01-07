@@ -3,13 +3,13 @@ sections: sectionId, sectionName, sectionStaus, sectionLocation, sectionDesc, se
 -->
 
 <form class="mainSettingsForm add" action="" method="post">
-    <h1>Edit section:</h1>
+    <h1>Edytuj sekcję:</h1>
 
-    <label>Section Name:</label>
-    <input type="text" name="sectionName" placeholder="please a section title." value="<?php echo $recSecdata['sectionName']; ?>">
+    <label>Nazwa sekcji:</label>
+    <input type="text" name="sectionName" placeholder="Wprowadź nazwę sekcji" value="<?php echo $recSecdata['sectionName']; ?>">
 
     <p>
-        <label>Section Status:</label>
+        <label>Status sekcji:</label>
         <select name="sectionStaus">
             <?php
             if ($recSecdata['sectionStaus'] == "active") {
@@ -30,7 +30,7 @@ sections: sectionId, sectionName, sectionStaus, sectionLocation, sectionDesc, se
     </p>
 
     <p>
-        <label>Section Location:</label>
+        <label>Lokalizacja sekcji:</label>
         <select name="sectionLocation">
             <?php
                 if($recSecdata['sectionLocation'] == "Side")
@@ -53,7 +53,7 @@ sections: sectionId, sectionName, sectionStaus, sectionLocation, sectionDesc, se
         </select>
     </p>
 
-    <label>Section Description:</label>
-    <textarea name="sectionDesc" placeholder="please write a section desc."><?php echo $recSecdata['sectionDesc']; ?></textarea>    
+    <label>Opis sekcji:</label>
+    <textarea name="sectionDesc" placeholder="Wprowadź opis sekcji"><?php echo $recSecdata['sectionDesc']; ?></textarea>    
     <input class="btn-primary" type="submit" name="submit" value="Edit">    
 </form>

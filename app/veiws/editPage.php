@@ -1,23 +1,27 @@
 <!--
  `pages` :: `id`, `page_name`, `page_content`, `page_status`, `page_visits`, `sectionId`, `page_image`, `page_date`, `createdBy`
 -->
-<script src='//cdn.tinymce.com/4/tinymce.min.js'></script>
+<!--<script src='//cdn.tinymce.com/4/tinymce.min.js'></script>
 <script>
     tinymce.init({
         selector: '#mytextarea'
     });
-</script>
-<form class="mainSettingsForm add newPage" action="" method="post" enctype="multipart/form-data">
-    <h1>Edit Page:</h1>
+</script>-->
 
-    <label>Page Name</label>
-    <input type="text" name="page_name" placeholder="plese write the page name here" value="<?php echo $pagedata['page_name'];?>">
+<script src="resources/ckeditor/ckeditor.js" type="text/javascript"></script>
+<script src="resources/ckeditor/sample.js" type="text/javascript"></script>
+
+<form class="mainSettingsForm add newPage" action="" method="post" enctype="multipart/form-data">
+    <h1>Edytuj stronę:</h1>
+
+    <label>Nazwa strony:</label>
+    <input type="text" name="page_name" placeholder="Wprowadź nazwę strony" value="<?php echo $pagedata['page_name'];?>">
     
-    <label>The Content</label>
-    <textarea id="mytextarea" name="page_content" placeholder="plese write the page content here"><?php echo $pagedata['page_content'];?></textarea>
+<!--    <label>Treść strony:</label>-->
+    <textarea id="editor" name="page_content" placeholder="Wprowadź treść strony"><?php echo $pagedata['page_content'];?></textarea>
     
     <p>
-    <label>Page Status</label>
+    <label>Status strony:</label>
     <?php
     if($pagedata['page_status'] == "active")
     {
@@ -43,7 +47,7 @@
     </p>
     
     <p>
-    <label>Page Section</label>
+    <label>Sekcja strony:</label>
     <select name="sectionId">
         <option value="active">Choose a Section Name: </option>
         <?php
@@ -57,7 +61,7 @@
     </p>
     
     <p>
-    <label>Page Image</label>
+    <label>Obrazek strony:</label>
     <input type="file" name="page_image[]" multiple="" />    
     <img src="<?php echo $pagedata['page_image'];?>">
     </p>
@@ -65,3 +69,7 @@
     <input type="submit" name="submit" value="Edit">           
      
 </form>
+
+<script>
+	initSample();
+</script>

@@ -1,5 +1,5 @@
-<h3>Pages</h3>
-<h2><a href="?page=Pages&action=add">Add New Page</a></h2>
+<h3>Strony</h3>
+<h2><a href="?page=Pages&action=add">Dodaj nową stronę</a></h2>
 <?php
 include '../includes/init.php';
 include '../includes/autoloader.php';

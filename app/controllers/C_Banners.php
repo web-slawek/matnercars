@@ -1,4 +1,4 @@
-<h3>Banners</h3>
+<h3>Banery</h3>
 <?php
 
 include '../includes/init.php';
@@ -33,8 +33,6 @@ if ($_POST OR @$_GET['action']) {
             echo $exc->getMessage();
         }
     }
-
-
 
     if (isset($_POST['submit']) && $_POST['submit'] == 'Upload') {
         if (isset($_FILES)) {

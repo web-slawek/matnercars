@@ -3,13 +3,13 @@ sections: sectionId, sectionName, sectionStaus, sectionLocation, sectionDesc, se
 -->
 
 <form class="mainSettingsForm add" action="" method="post">
-    <h1>Add new section:</h1>
+    <h1>Dodaj nową sekcję:</h1>
     
-    <label>Section Name:</label>
-    <input type="text" name="sectionName" placeholder="please a section title.">
+    <label>Nazwa sekcji:</label>
+    <input type="text" name="sectionName" placeholder="Wprowadź nazwę sekcji">
     
     <p>
-    <label>Section Status:</label>
+    <label>Status sekcji:</label>
     <select name="sectionStaus">
         <option value="active">Active</option>
         <option value="disActive">Disactive</option>
@@ -17,14 +17,14 @@ sections: sectionId, sectionName, sectionStaus, sectionLocation, sectionDesc, se
     </p>
     
     <p>
-    <label>Section Location:</label>
+    <label>Lokalizacja sekcji:</label>
     <select name="sectionLocation">
         <option value="Side">Side</option>
         <option value="Body">Body</option>
     </select>
     </p>
     
-    <label>Section Description:</label>
-    <textarea name="sectionDesc" placeholder="please write a section desc."></textarea>    
+    <label>Opis sekcji:</label>
+    <textarea name="sectionDesc" placeholder="Wprowadź opis sekcji"></textarea>    
     <input class="btn-primary" type="submit" name="submit" value="Add">    
 </form>

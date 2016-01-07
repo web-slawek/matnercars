@@ -1,15 +1,15 @@
 <form action="" method="post" class="mainSettingsForm">  
-    <label>Site name</label>
+    <label>Nazwa strony:</label>
     <input type="text" name="site_name" value="<?php echo $displayData['site_name'];?>">
-    <label>Site url</label>
+    <label>Link strony:</label>
     <input type="text" name="site_url" value="<?php echo $displayData['site_url'];?>">    
     <label>Email</label>
     <input type="email" name="site_email" value="<?php echo $displayData['site_email'];?>">
     <div style="clear: both"></div>
-    <label>Site Description</label>
+    <label>Opis strony</label>
     <textarea name="site_dcsc"><?php echo $displayData['site_dcsc'];?></textarea>
     <div style="clear: both"></div>
-    <label>Site Tags</label>
+    <label>Tagi</label>
     <textarea name="site_tags"><?php echo $displayData['site_tags'];?></textarea>
     <div style="clear: both"></div>
     <label>Home panel notes</label>

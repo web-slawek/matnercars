@@ -1,9 +1,6 @@
-<h3>
-    Sections    
-</h3>
+<h3>Sekcje</h3>
 
-<h2><a href="?page=Sections&action=add">Add New Section</a></h2>
-
+<h2><a href="?page=Sections&action=add">Dodaj nową sekcję</a></h2>
 
 <?php
 

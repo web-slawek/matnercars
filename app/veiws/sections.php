@@ -5,13 +5,13 @@ sections: sectionId, sectionName, sectionStaus, sectionLocation, sectionDesc, se
 <table class="table table-hover table-bordered sectionTable">
     <tr class="danger">
         <th>Id</th>
-        <th>Section Name</th>
+        <th>Nazwa sekcji</th>
         <th>Staus</th>
-        <th>Location</th>
-        <th>Section Desc</th>
-        <th>Date</th>
-        <th>Created By</th>
-        <th>Actions</th>
+        <th>Lokalizacja</th>
+        <th>Opis sekcji</th>
+        <th>Data</th>
+        <th>Autor</th>
+        <th>Edycja</th>
     </tr>
     <?php
     for ($i = 0; $i < count($SecDataDisplay); $i++) {

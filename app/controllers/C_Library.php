@@ -22,8 +22,7 @@ if ($_POST) {
         }
     }
     if(isset($_POST['submit']) && $_POST['submit'] == 'Delete')
-    {
-        //var_dump($_POST['checkimage']);        
+    {     
         try {
             $filesToDelete = $_POST['checkimage'];
                         

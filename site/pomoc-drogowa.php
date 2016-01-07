@@ -30,7 +30,7 @@
         </div>
     </div>
 </section>
-<section id="cd-google-map" class="slideanim">
+<section id="cd-google-map">
     <div id="google-container"></div>
     <div id="cd-zoom-in"></div>
     <div id="cd-zoom-out"></div>

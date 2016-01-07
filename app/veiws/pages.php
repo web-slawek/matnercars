@@ -5,12 +5,12 @@
 <table class="table table-hover table-bordered sectionTable">
     <tr class="danger">
         <th>Id</th>
-        <th>Page Name</th>
+        <th>Nazwa strony</th>
         <th>Staus</th>                
-        <th>Section Name</th>
-        <th>Date</th>
-        <th>Created By</th>
-        <th>Actions</th>
+        <th>Sekcja strony</th>
+        <th>Data</th>
+        <th>Autor</th>
+        <th>Edycja</th>
     </tr>
 
     <?php
