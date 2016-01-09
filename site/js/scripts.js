@@ -24,9 +24,9 @@ $(document).ready(function () {
 
 jQuery(document).ready(function ($) {
     //set your google maps parameters
-    var latitude = 49.677766,
-            longitude = 21.710534,
-            map_zoom = 15;
+    var latitude = 49.677470,
+            longitude = 21.710430,
+            map_zoom = 16;
 
     //google map custom marker icon - .png fallback for IE11
     var is_internetExplorer11 = navigator.userAgent.toLowerCase().indexOf('trident') > -1;

@@ -21,6 +21,7 @@ include 'includes/functions.php';
         <script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyChfD3tCnOOVszyYhg7rknb0BjLtqVhCiA "></script>
         <script src="site/js/scripts.js" type="text/javascript"></script>
 
+        <link href='https://fonts.googleapis.com/css?family=Poppins&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link href="site/css/common.css" rel="stylesheet" type="text/css"/>
 
         <link href="site/css/bootstrap/custom-dropdown-menu.css" rel="stylesheet" type="text/css"/>
@@ -32,7 +33,7 @@ include 'includes/functions.php';
 
     <body>
         <div class="container">
-            <div class="logo"><a href="/"><img src="site/img/matner-logo.png" alt=""/></a></div>
+            <div class="logo"><a href="<?php echo SERVER_ADDRESS; ?>"><img src="site/img/matner-logo.png" alt=""/></a></div>
             <div class="contact-wrap">
                 <div class="fast-contact">
                     <h1>694 880 525</h1>
@@ -89,7 +90,7 @@ include 'includes/functions.php';
                         <li><a href="kontakt">Kontakt</a></li>
                     </ul>
                     <div class="logo-footer">
-                        <a href="#">
+                        <a href="<?php echo SERVER_ADDRESS; ?>">
                             <img src="site/img/matner-logo.png" alt=""/>
                         </a>
                     </div>
