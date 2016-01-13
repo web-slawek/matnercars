@@ -9,7 +9,7 @@ include '../includes/autoloader.php';
 
 if ($_POST) {
     // Login
-    if (isset($_POST['submit']) AND $_POST['submit'] == "Login") {
+    if (isset($_POST['submit']) AND $_POST['submit'] == "Zaloguj") {
 
 
         try {

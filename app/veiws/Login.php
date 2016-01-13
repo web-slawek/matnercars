@@ -18,7 +18,7 @@ and open the template in the editor.
     <body>
         <div class="container">
             <div class="contents logincont">
-                <div class="regiter">
+<!--                <div class="regiter">
                     <form action="C_LoginController.php" method="post" novalidate="">
                         <h1>Register new user:</h1>
                         <input required="required" name="name" class="input-lg" type="text" placeholder="Please write your name">
@@ -28,13 +28,13 @@ and open the template in the editor.
                         <input class="btn-primary btn-lg" type="submit" name="submit" value="Register">
 
                     </form>
-                </div>
+                </div>-->
                 <div class="login">
-                    <h1>Login :</h1>
+                    <h1>Logowanie MATNERCARS</h1>
                     <form action="C_LoginController.php" method="post">
-                        <input required="required" name="username" class="input-lg" type="text" placeholder="please enter a username">
-                        <input required="required" name="password" class="input-lg" type="password" > 
-                        <input class="btn-primary btn-lg" type="submit" name="submit" value="Login">
+                        <input class="form-control" required="required" name="username" class="input-lg" type="text" placeholder="Podaj swój login">
+                        <input class="form-control" required="required" name="password" placeholder="Podaj swoje hasło" class="input-lg" type="password" > 
+                        <input class="btn btn-primary text-uppercase" type="submit" name="submit" value="Zaloguj">
                     </form>
                 </div>
             </div>
